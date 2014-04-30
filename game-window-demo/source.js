@@ -1,15 +1,13 @@
 function Canvas(id){
 	this._canvas	=	document.getElementById(id);
-	this._clicked	=	document.getElementById("clicked");
-	this._hovered	=	document.getElementById("hovered");
-
-	this._width		=	this._canvas.width;
+	
+	this._width	=	this._canvas.width;
 	this._height	=	this._canvas.height;
 	this._context	=	this._canvas.getContext("2d");
-	this.x			=	0;
-	this.y			=	0;
+	this.x		=	0;
+	this.y		=	0;
 	this._player	=	new Player(32, 32);
-	this._map		=	new Map();
+	this._map	=	new Map();
 
 	
 	this.drawGrid	=	function(x,y){
@@ -147,8 +145,7 @@ function random(min, max){
 }
 
 var canvas	=	new Canvas("frame");
-canvas._canvas.addEventListener('click', function(e){canvas.onclick(e, canvas)}, false);
-canvas._canvas.addEventListener('mousemove', function(e){canvas.onmouseover(e, canvas)}, false);
+
 document.onkeydown = function(e) {
     e = e || window.event;
     switch (e.keyIdentifier) {
