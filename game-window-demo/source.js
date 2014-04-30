@@ -6,7 +6,7 @@ function Canvas(id){
 	this._context	=	this._canvas.getContext("2d");
 	this.x		=	0;
 	this.y		=	0;
-	this._player	=	new Player(32, 32);
+	this._player	=	new Player(36, 27);
 	this._map	=	new Map();
 
 	
@@ -163,4 +163,4 @@ document.onkeydown = function(e) {
             break;
     }
 };
-canvas.drawGrid(32, 32);
+canvas.drawGrid(36, 27);
