@@ -1,0 +1,37 @@
+#2dscape{
+}
+#left{
+	float:left;
+	width: 519px;
+}
+#right{
+	margin-left:519px;
+	width:246px;
+}
+#game{
+	border:3px dotted black;
+	-webkit-border-image:url("assets/border.png") 3 3 repeat;
+	-moz-border-image:url("assets/border.png") 3 3 repeat;
+	border-image:url("assets/border.png") 3 3 repeat;
+	display:block;
+}
+#lower-interface{
+	display:block;
+	background-color: #c8b698;
+    font-family: "runescape";
+	border:9px dotted black;
+	-webkit-border-image:url("assets/chatborder.png") 9 9 repeat;
+	-moz-border-image:url("assets/chatborder.png") 9 9 repeat;
+	border-image:url("assets/chatborder.png") 9 9 repeat;
+}
+#minimap{
+	display:block;
+	background-color: #000000;
+}
+#main-interface{
+	display:block;
+	background-color: #EAEAEA;
+}
+li{
+	list-style-type: none;
+}

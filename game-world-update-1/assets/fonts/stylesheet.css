@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'runescape_chat_07regular';
+    src: url('standard-webfont.eot');
+    src: url('standard-webfont.eot?#iefix') format('embedded-opentype'),
+         url('standard-webfont.woff') format('woff'),
+         url('standard-webfont.ttf') format('truetype'),
+         url('standard-webfont.svg#runescape_chat_07regular') format('svg');
+    font-weight: normal;
+}

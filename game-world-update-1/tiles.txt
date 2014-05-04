@@ -1,0 +1,15 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>2D-Scape</title>
+	<meta name="description" content="2D-Scape">
+	<meta name="author" content="Meredith">
+</head>
+<body>
+
+</body>
+<script src="tile.js"></script>
+</html>
