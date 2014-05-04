@@ -142,7 +142,7 @@ function Map(){
 					}else{
 						game.drawTile(i + Math.floor(domain/2), j + Math.floor(range/2), this.map[x][y].getColor(), 25);
 					}
-					if(x == this.highlight.position.x && y == this.highlight.position.y){
+					if(x == highlight.position.x && y == highlight.position.y){
 						this.drawHighlight(game.handle);
 					}
 				}
@@ -175,10 +175,10 @@ function Map(){
 		context.beginPath(); 
 		context.lineWidth="3";
 		context.strokeStyle="red";
-		context.moveTo(25*this.highlight.position.x+6,25*this.highlight.position.y+6);
-		context.lineTo(25*(this.highlight.position.x+1)-6,25*(this.highlight.position.y+1)-6);
-		context.moveTo(25*(this.highlight.position.x+1)-6,25*this.highlight.position.y+6);
-		context.lineTo(25*this.highlight.position.x+6,25*(this.highlight.position.y+1)-6);
+		context.moveTo(25*highlight.position.x+6,25*highlight.position.y+6);
+		context.lineTo(25*(highlight.position.x+1)-6,25*(highlight.position.y+1)-6);
+		context.moveTo(25*(highlight.position.x+1)-6,25*highlight.position.y+6);
+		context.lineTo(25*highlight.position.x+6,25*(highlight.position.y+1)-6);
 		context.stroke();
 	}
 }
