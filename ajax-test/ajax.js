@@ -5,6 +5,7 @@ function Ajax(){
 		var result	=	new XMLHttpRequest();
 		result.onreadystatechange	=	function(){
 			if (result.readyState==4 && result.status==200) {
+				alert(result.responseText);
 				this.result	=	result.responseText;
 			}
 		}
