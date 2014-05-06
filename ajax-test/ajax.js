@@ -1,11 +1,11 @@
 function Ajax(){
 	this.result	=	"";
 	
-	this.getFile	=	function(url){
+	this.get	=	function(url, callback){
 		var result	=	new XMLHttpRequest();
 		result.onreadystatechange	=	function(){
 			if (result.readyState==4 && result.status==200) {
-				alert(result.responseText);
+				callback(result.responseText);
 				this.result	=	result.responseText;
 			}
 		}
@@ -17,3 +17,6 @@ function Ajax(){
 		return this.result;
 	}
 }
+
+var a	=	new Ajax();
+a.getFile("data.html", alert);
